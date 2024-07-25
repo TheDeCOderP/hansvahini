@@ -1,0 +1,53 @@
+
+#pointermenu{
+border-top: 7px solid grey; /*optional border across top*/
+margin: 0;
+padding: 0;
+}
+
+#pointermenu ul{
+margin: 0;
+margin-left: 5px; /*menu offset from left edge of window*/
+float: left;
+padding-left: 8px;
+padding-bottom:20px;
+font: bold 13px Verdana;
+background-color: grey;
+background:brown url(media/leftround.gif) bottom left no-repeat; /*optional left round corner*/
+}
+
+* html #pointermenu ul{ /*IE6 only rule. Decrease ul left margin and add 1em bottom margin*/
+margin-bottom: 1em;
+margin-left: 7px; /*menu offset from left edge of window in IE*/
+}
+
+#pointermenu ul li{
+	
+display: inline;
+}
+
+
+#pointermenu ul li a{
+float: left;
+color: white;
+font-weight: bold;
+padding: 25px 7px 20px 7px;
+text-decoration: none;
+background: url(media/pointer.gif) bottom center no-repeat;
+}
+
+#pointermenu ul li a:visited{
+color: white;
+}
+
+
+#pointermenu ul li a:hover, #pointermenu ul li a#selected{ /*hover and selected link*/
+color: white;
+background-color: grey;
+}
+
+#pointermenu ul li a#rightcorner{
+padding-right: 0;
+padding-left: 2px;
+background: url(media/rightround.gif) bottom right no-repeat; /*optional right round corner*/
+}
